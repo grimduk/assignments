@@ -21,6 +21,9 @@ body {
     justify-content: space-around;
     flex-flow: row wrap;
     gap: 15%;
+    background-image: url(images/city.jpg);
+    background-position: top;
+    background-size: cover;
 }
 .intro {
     display: flex;
@@ -41,7 +44,7 @@ body {
     font-size: 24px;
     color: #f9faf8;
 }
-.logo:hoover {
+.logo:hover {
     color: #f7601b;
 }
 .main h1 {
@@ -68,6 +71,10 @@ button {
     padding-bottom: 2px;
 }
 
+button:hover {
+     background-color: #d7e4ee;
+}
+
 header ul {
     display: flex;
     gap: 16px;
@@ -86,7 +93,7 @@ a {
     color: #f9faf8;
 }
 
-a:hoover {
+a:hover {
     background-color: #f7601b;
 
 }
@@ -155,30 +162,51 @@ img {
     transition: ease-in .7s;
 }
 
-.card:hoover {
+.card:hover {
     color: #f9faf8;
 }
 
-.content-img {
+.content-img1 {
     width: 144px;
     height: 144px;
-    background-image: linear-gradient(180deg, #f7691b, rgba(0, 0, 0, 0));
+    background-image: url(images/stare.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: ease 0.1s;
+}
+.content-img2 {
+    width: 144px;
+    height: 144px;
+    background-image: url(images/water.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    transition: ease 0.1s;
+}
+.content-img3 {
+    width: 144px;
+    height: 144px;
+    background-image: url(images/peacock.jpg);
+    background-position: center;
+    background-size: cover;
     border-radius: 20px;
     transition: ease 0.1s;
 }
 
-.content-img:hoover {
+.content-img:hover {
     transform: scale(1.05)
 }
 
 .quote {
     padding: 80px 35%;
     background-size: cover;
-    background-image: url(images/city.jpg);
-    font-size: 36px;
+    background-image: url(images/night.jpg);
+    background-position: 30% 60%;  
+    font-size: 24px;
     font-weight: lighter;
     font-style: italic;
-    color: #1f2937;
+    color: #0b111a;
     text-shadow: 0 0 5px #f9faf8,
     0 0 15px #f9faf8,
     0 0 30px #f9faf8;
@@ -227,4 +255,6 @@ footer {
     text-align: center;
     padding: 24px 0px;
     align-self: stretch;
+   /* border-radius: 20px;*/
+    color: #f9faf8;
 }
